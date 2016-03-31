@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private LinearLayout drawerContent;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // 设置toolbar支持actionbar
         setSupportActionBar(toolbar);
 
+        // 使用ActionBarDrawerToggle，配合DrawerLayout和ActionBar,以实现推荐的抽屉功能。
         ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);
         mDrawerToggle.syncState();
         drawerLayout.setDrawerListener(mDrawerToggle);
