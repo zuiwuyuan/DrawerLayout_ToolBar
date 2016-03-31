@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--主布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#00c7c0"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主页面"
+            android:textSize="40sp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <!--侧滑菜单-->
+    <LinearLayout
+        android:id="@+id/drawerContent"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+        android:layout_gravity="start">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="我的收藏"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:text="我的关注"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
